@@ -1,0 +1,27 @@
+[workspace]
+members = ["apps/desktop", "crates/bobo-app", "crates/bobo-core", "crates/bobo-storage"]
+resolver = "3"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.95"
+publish = false
+
+[workspace.dependencies]
+bobo-core = { path = "crates/bobo-core" }
+bobo-storage = { path = "crates/bobo-storage" }
+bobo-app = { path = "crates/bobo-app" }
+async-channel = "2.5"
+dioxus = { version = "=0.7.10", default-features = false, features = ["macro", "html", "signals", "hooks", "document"] }
+# 0.7.10's edits module uses Tokio primitives even with defaults disabled.
+# Its WebView also requires the framework runtime. No application-owned Tokio runtime.
+dioxus-desktop = { version = "=0.7.10", default-features = false, features = ["tokio_runtime"] }
+# Dioxus 0.7.10 references inspector methods in release without cfg gating.
+# Enable only Wry's methods, not Dioxus's devserver/hot-reload feature.
+wry = { version = "=0.53.5", default-features = false, features = ["devtools"] }
+chrono = { version = "0.4.45", default-features = false, features = ["clock", "std"] }
+uuid = { version = "1.29", features = ["v4"] }
+thiserror = "2.0.21"
+rusqlite = { version = "0.37", features = ["bundled"] }
+tempfile = "3.27"

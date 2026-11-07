@@ -1,0 +1,13 @@
+[package]
+name = "bobo-storage"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+bobo-core.workspace = true
+rusqlite.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true

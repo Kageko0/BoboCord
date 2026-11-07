@@ -1,0 +1,30 @@
+.chat-header { min-height: 76px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; padding: 14px 24px; gap: 12px; }
+.chat-heading { display: flex; gap: 14px; align-items: center; min-width: 0; }
+.chat-heading > div { min-width: 0; }
+.chat-heading h2 { font-size: 15px; font-weight: 650; overflow-wrap: anywhere; }
+.chat-heading p { font-size: 11px; color: var(--muted); margin-top: 4px; }
+.chat-header .inline-actions { flex-shrink: 0; }
+.chat-header .subtle-button { font-size: 11px; min-height: 28px; padding: 4px 8px; }
+.message-list { flex: 1; min-height: 0; overflow: auto; overflow-anchor: none; padding: 20px 0 8px; scrollbar-gutter: stable; }
+.history-controls { display: flex; justify-content: center; gap: 8px; }
+.empty-state { max-width: 450px; margin: 8vh auto 30px; padding: 24px; text-align: left; animation: enter 150ms ease-out; }
+.empty-symbol { display: grid; place-items: center; width: 56px; height: 56px; background: var(--panel); border: 1px solid var(--border); color: var(--accent); border-radius: 16px; font-size: 30px; margin-bottom: 20px; }
+.empty-state h3 { font-size: 24px; font-weight: 650; letter-spacing: -.03em; line-height: 1.2; margin-bottom: 12px; }
+.empty-state p { font-size: 13px; line-height: 1.7; color: var(--muted); }
+.local-badge { display: inline-block; margin-top: 24px; color: var(--muted); font-size: 10px; border-top: 1px solid var(--border); padding-top: 12px; }
+.message-row { display: flex; gap: 12px; padding: 9px 24px; }
+.message-row:hover { background: var(--panel); }
+.message-avatar { width: 30px; height: 30px; margin-top: 2px; background: var(--panel); }
+.message-content { min-width: 0; flex: 1; }
+.message-meta { display: flex; align-items: baseline; flex-wrap: wrap; gap: 10px; margin-bottom: 4px; }
+.message-meta strong { font-size: 12px; font-weight: 650; }
+.message-meta time { font-size: 10px; color: var(--muted); }
+.message-body { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 13px; line-height: 1.6; user-select: text; }
+.load-earlier { display: block; margin: 0 auto 16px; font-size: 11px; }
+.composer { padding: 10px 20px 12px; }
+.composer-input { display: flex; align-items: flex-end; gap: 12px; border: 1px solid var(--border); background: var(--panel); border-radius: var(--radius); padding: 8px; }
+.composer-input:focus-within { border-color: var(--accent); }
+.composer textarea { resize: none; flex: 1; border: 0; outline: none; background: transparent; line-height: 1.5; padding: 6px 8px; max-height: 160px; }
+.composer .send-button { min-height: 34px; padding: 6px 16px; font-size: 12px; }
+.composer-hints { display: flex; gap: 8px; justify-content: space-between; margin: 8px 4px 0; font-size: 10px; color: var(--muted); }
+@keyframes enter { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: translateY(0); } }
