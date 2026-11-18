@@ -1,0 +1,20 @@
+# Repositório apenas de distribuição: fontes e documentos locais não entram.
+/apps/
+/crates/
+/experiments/
+/services/
+/vendor/
+/local/
+/scripts/
+/deploy/
+/Cargo.toml
+/Cargo.lock
+/rust-toolchain.toml
+/AGENTS.md
+/**/AGENTS.md
+/*CODEX*.md
+/docs/*CODEX*.md
+/dist/
+/target/
+*.sqlite3
+*.dpapi
