@@ -1,33 +1,39 @@
 <p align="center">
-  <strong>BoboCord</strong><br>
-  Converse com amigos, participe de comunidades e crie seus espaços.
+  <img src="assets/bobocord-hero.png" alt="BoboCord — Um espaço para estar junto. Prévia conceitual da interface." width="100%">
 </p>
 
 <p align="center">
-  <a href="docs/STATUS.md">Progresso</a> ·
-  <a href="docs/PROTOTIPO.md">Interface</a> ·
-  <a href="https://github.com/Kageko0/BoboCord/releases">Downloads</a>
+  <a href="docs/STATUS.md"><strong>Progresso</strong></a> &nbsp;·&nbsp;
+  <a href="docs/PROTOTIPO.md"><strong>Interface</strong></a> &nbsp;·&nbsp;
+  <a href="https://github.com/Kageko0/BoboCord/releases"><strong>Versões do Client</strong></a>
 </p>
 
-BoboCord é um comunicador desktop em desenvolvimento, inspirado na organização de comunidades e conversas do Discord. O Client usa Rust e Dioxus Desktop, com histórico local e comunicação P2P quando possível.
+**BoboCord** é um aplicativo desktop para reunir amigos, conversas e comunidades em um só lugar. Inspirado na praticidade dos comunicadores modernos, está sendo construído com **Rust + Dioxus Desktop** e uma proposta de comunicação direta entre dispositivos sempre que possível.
 
-- **Amigos e mensagens diretas:** interface e integração implementadas; entrega entre computadores ainda pendente de homologação.
-- **Servidores e canais:** organização e navegação presentes no Client.
-- **Voz privada e coletiva:** transporte QUIC/Opus implementado; conversas audíveis entre usuários ainda pendentes de validação real.
-- **Vídeo e tela compartilhada:** propostas, não entregues.
+A identidade é simples: um espaço acolhedor, uma interface enxuta e liberdade para organizar suas conversas.
 
-**Baixar:** consulte [Releases](https://github.com/Kageko0/BoboCord/releases). Ainda não há uma versão B5R.3 homologada para distribuição pública. Quando existir, baixe somente o pacote **Client** da versão mais recente.
+### O que está tomando forma
 
-<details>
-<summary>Como usar a versão portátil (Windows)</summary>
+| Experiência | Estado atual |
+| --- | --- |
+| **Amigos e perfil** | Interface implementada |
+| **Servidores e canais** | Navegação e organização implementadas |
+| **Mensagens diretas e histórico** | Integração implementada; entrega real entre dispositivos pendente |
+| **Voz privada e coletiva** | Transporte QUIC/Opus integrado; áudio entre usuários pendente de homologação |
+| **Vídeo e compartilhamento de tela** | Planejados |
 
-1. Extraia todo o ZIP do Client.
-2. Abra `BoboCord.exe`.
-3. Se necessário, instale o Microsoft Edge WebView2 Runtime e os componentes Visual C++ exigidos pelo pacote.
+### Por trás do BoboCord
 
-O aplicativo mantém os dados no perfil local do usuário. Esta fase não dispõe de atualização automática nem de instalador oficial.
-</details>
+**Rust** para o núcleo do aplicativo · **Dioxus** para a interface desktop · **SQLite** para persistência local · **QUIC/Opus** para o transporte de áudio.
 
-O andamento, as entregas e as próximas etapas estão em [Status](docs/STATUS.md). A referência visual do Client está em [Protótipo](docs/PROTOTIPO.md).
+O desenvolvimento acontece em um ambiente privado. Este repositório apresenta o produto, registra seu avanço e será o canal oficial das versões públicas do **Client**. As ferramentas internas de desenvolvimento não são distribuídas.
 
-**Licença:** ainda não definida. Não confundir a disponibilidade do executável com autorização para redistribuição ou modificação do código-fonte.
+### Acompanhe
+
+- [Entregas, etapas e progresso](docs/STATUS.md)
+- [Conceito e organização visual do Client](docs/PROTOTIPO.md)
+- [Releases do Client para Windows](https://github.com/Kageko0/BoboCord/releases)
+
+> **Em desenvolvimento.** Ainda não existe uma versão pública estável homologada. As imagens de interface são conceituais; funções implementadas no código podem depender de testes reais entre dispositivos.
+
+<sub>BoboCord é um projeto independente. Não é afiliado ao Discord. A licença de distribuição e uso ainda será definida.</sub>
