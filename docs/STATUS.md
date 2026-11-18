@@ -38,7 +38,6 @@
 
 **Progresso desta etapa**
 
-- Separação do Creator local e do Client de distribuição.
 - Documentação pública reduzida e prototipagem baseada no Dioxus.
 - Pipeline de empacotamento restrito ao Client para exportação pública.
 

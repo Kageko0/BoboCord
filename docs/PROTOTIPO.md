@@ -20,6 +20,4 @@
 - **Servidores:** lista de setores e canais de texto/voz; membros quando necessário.
 - **Voz de servidor:** entrar e sair da sala, sem solicitação de aceite a cada participante.
 - **Creator:** diagnósticos e ferramentas internas fora do Client público.
-- **Referências:** Discord e [griasdi](https://griasdi.github.io/).
-
-Protótipos HTML e capturas antigas da fase GPUI ficam somente no histórico local; não representam a interface atual.
+- **Referências:** Discord e [griasdi](https://griasdi.github.io/)
